@@ -4,7 +4,11 @@
 
 > A micro (and modular) CSS framework based on 8pt grid
 
-[Try it!](https://zuck.github.io/eight.css/)
+[![npm version](https://badge.fury.io/js/eight.css.svg)](https://badge.fury.io/js/eight.css)
+
+## Demo
+
+You can take a look of all **eight.css** features on demo page: [try it!](https://zuck.github.io/eight.css/)
 
 ## Usage
 

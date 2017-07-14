@@ -1,5 +1,8 @@
 @import 'eight.theme'
 
+img
+  margin 1 * $ept
+
 pre
   overflow auto
 
@@ -12,6 +15,7 @@ blockquote
 fieldset
   position relative
   margin 0
+  min-width auto
   border none
   padding $form-fieldset-padding * 2 $form-fieldset-padding $form-fieldset-padding
   background-color $panel-background-color
@@ -22,6 +26,79 @@ fieldset
     left 0
     margin $form-fieldset-padding
 
-.btn
-  padding 1 * $ept 2 * $ept
+label
+  display inline-block
+  margin 0 0 1 * $ept
+
+input
+textarea
+select
+  width 100%
+  padding 1 * $ept
+  box-sizing border-box
   border-radius $base-border-radius
+  border 1px solid $border-color
+  background-color $white-color
+  box-shadow none
+
+input
+select
+  max-width 48 * $ept
+  min-height 4 * $ept
+
+select
+input[type="checkbox"]
+input[type="radio"]
+  cursor pointer
+
+textarea
+  max-width 72 * $ept
+  min-height 24 * $ept
+
+input[type="reset"]
+input[type="submit"]
+input[type="checkbox"]
+input[type="radio"]
+  width auto
+  min-height auto
+
+button
+input[type="reset"]
+input[type="submit"]
+.btn
+  display inline-block
+  margin 0
+  margin-right 1 * $ept
+  padding 1.5 * $ept 3 * $ept
+  border none
+  border-radius $base-border-radius
+  background-color $border-color
+  color $text-color
+  font-family $header-font-family
+  font-weight $header-font-weight
+  line-height $header-line-height
+  letter-spacing $header-letter-spacing
+  text-transform uppercase
+  text-decoration none
+  box-shadow none
+  cursor pointer
+
+  &:hover
+    background-color $border-dark-color
+    color $text-inverted-color
+
+  &.floating
+    position fixed
+    margin 0
+
+    &.top
+      top 2 * $ept
+
+    &.bottom
+      bottom 2 * $ept
+
+    &.left
+      left 2 * $ept
+
+    &.right
+      right 2 * $ept

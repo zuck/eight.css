@@ -4,6 +4,8 @@
 
 > A micro (and modular) CSS framework based on 8pt grid
 
+[Try it!](https://zuck.github.io/eight.css/)
+
 ## Usage
 
 **Eight.css** is a modular CSS framework, so you can use it as a single bundle

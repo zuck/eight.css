@@ -1,3 +1,5 @@
+![eight.css](https://raw.githubusercontent.com/zuck/eight.css/master/art/logo.png "eight.css")
+
 # eight.css
 
 > A micro (and modular) CSS framework based on 8pt grid

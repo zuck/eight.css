@@ -37,6 +37,14 @@ to add it manually *BEFORE* importing **eight.css** modules.
 <link rel="stylesheet" href="eight.elements.css">
 ```
 
+### As a package
+
+You can also install **eight.css** using **npm**:
+
+```bash
+$ npm install eight.css
+```
+
 ## Compile CSS from scratch
 
 You can (re)compile CSS from **Stylus** source files:

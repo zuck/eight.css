@@ -7,8 +7,6 @@
   </head>
   <body id="wrapper">
     <!-- Sample Content to Plugin to Template -->
-    <h1 id="headings">Headings</h1>
-
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -107,12 +105,8 @@
     			<input type="file" class="file" name="file" />
     		</p>
 
-
     		<p><input class="button" type="reset" value="Clear" /> <input class="button" type="submit" value="Submit" />
     		</p>
-
-
-
     	</form>
 
     </fieldset>
@@ -148,7 +142,9 @@
     <pre><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr></p></pre>
 
     <blockquote>
-    	"This stylesheet is going to help so freaking much." <br />-Blockquote
+    	"This stylesheet is going to help so freaking much."
+      <br/>
+      <cite>Blockquote</cite>
     </blockquote>
 
     <small><a href="#wrapper">[top]</a></small>
@@ -156,7 +152,133 @@
 
     <h1 id="grid">Grid &amp; Layouts</h1>
 
+    <h2>Auto width columns</h2>
+
+    <div class="row">
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <h2>Percentage width columns</h2>
+
+    <div class="row">
+      <div class="column tenth"><div class="box">1/10</div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="column fifth"><div class="box">1/5</div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="column fourth"><div class="box">1/4</div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="column third"><div class="box">1/3</div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <div class="row">
+      <div class="column half"><div class="box">1/2</div></div>
+      <div class="column"><div class="box"></div></div>
+      <div class="column"><div class="box"></div></div>
+    </div>
+
+    <h2>Gutters</h2>
+
+    <div class="row">
+      <div class="column"><div class="box">Normal gutter</div></div>
+      <div class="column"><div class="box">Normal gutter</div></div>
+      <div class="column"><div class="box">Normal gutter</div></div>
+    </div>
+
+    <div class="row compact">
+      <div class="column"><div class="box">Without gutter</div></div>
+      <div class="column"><div class="box">Without gutter</div></div>
+      <div class="column"><div class="box">Without gutter</div></div>
+    </div>
+
+    <div class="row expanded">
+      <div class="column"><div class="box">Double gutter</div></div>
+      <div class="column"><div class="box">Double gutter</div></div>
+      <div class="column"><div class="box">Double gutter</div></div>
+    </div>
+
+    <h2>Containers</h2>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="column"><div class="box"></div></div>
+        <div class="column"><div class="box"></div></div>
+        <div class="column"><div class="box"></div></div>
+        <div class="column"><div class="box"></div></div>
+        <div class="column"><div class="box"></div></div>
+        <div class="column"><div class="box"></div></div>
+      </div>
+
+    </div>
+
     <small><a href="#wrapper">[top]</a></small>
     <!-- End of Sample Content -->
+
+    <style>
+    #wrapper {
+      margin: 16px;
+      background-color: #f5f5f5;
+    }
+
+    .box {
+      width: 100%;
+      min-height: 32px;
+      margin-bottom: 16px;
+      line-height: 32px;
+      vertical-align: middle;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+    }
+    </style>
   </body>
 </html>

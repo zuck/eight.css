@@ -1,1 +1,59 @@
+@import 'eight.theme'
 
+.container
+  margin 0 auto
+
+  @media screen and (min-width: $md)
+    width $sm
+
+  @media screen and (min-width: $lg)
+    width $md
+
+  @media screen and (min-width: $xl)
+    width $lg
+
+.row,
+.column
+  display flex
+
+.row
+  .column
+    padding-left $grid-column-gutter * 1
+    padding-right $grid-column-gutter * 1
+    flex 1
+
+    &:first-child
+      padding-left $grid-column-gutter * 0 !important
+
+    &:last-child
+      padding-right $grid-column-gutter * 0 !important
+
+    &.tenth
+      flex-basis 10%
+      max-width 10%
+
+    &.fifth
+      flex-basis 20%
+      max-width 20%
+
+    &.fourth
+      flex-basis 25%
+      max-width 25%
+
+    &.third
+      flex-basis 33.33%
+      max-width 33.33%
+
+    &.half
+      flex-basis 50%
+      max-width 50%
+
+  &.compact
+    .column
+      padding-left $grid-column-gutter * 0
+      padding-right $grid-column-gutter * 0
+
+  &.expanded
+    .column
+      padding-left $grid-column-gutter * 2
+      padding-right $grid-column-gutter * 2

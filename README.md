@@ -1,4 +1,4 @@
-![eight.css](https://raw.githubusercontent.com/zuck/eight.css/master/art/logo.png "eight.css")
+![eight.css](https://raw.githubusercontent.com/zuck/eight.css/master/docs/art/logo.png "eight.css")
 
 # eight.css
 

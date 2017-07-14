@@ -4,7 +4,7 @@
   "description": "A micro (and modular) CSS framework based on 8pt grid",
   "main": "dist/eight.css",
   "scripts": {
-    "build": "echo \"Building eight.css...\" && stylus src --include-css -m -c -r -o dist",
+    "build": "echo \"Building eight.css...\" && stylus src --include-css -m -c -r -o dist && copyfiles -f dist/eight.css docs/",
     "test": "npm run build && echo \"Warning: no test specified\"",
     "pre-publish": "npm run test"
   },
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/zuck/eight.css#readme",
   "devDependencies": {
+    "copyfiles": "^1.2.0",
     "stylus": "^0.54.5",
     "normalize.css": "^7.0.0",
     "pre-commit": "^1.2.2"

@@ -30,6 +30,7 @@ to add it manually *BEFORE* importing **eight.css** modules.
 <link rel="stylesheet" href="normalize.css"> /* Not included by default */
 <link rel="stylesheet" href="eight.grid.css">
 <link rel="stylesheet" href="eight.typography.css">
+<link rel="stylesheet" href="eight.elements.css">
 ```
 
 ## Compile CSS from scratch

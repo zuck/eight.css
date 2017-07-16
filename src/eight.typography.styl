@@ -10,6 +10,13 @@ html
   line-height $base-line-height
   letter-spacing $base-letter-spacing
 
+p
+  margin-top $base-top-margin
+  margin-bottom $base-bottom-margin
+
+pre
+  overflow auto
+
 legend
 label
   color $text-color
@@ -39,28 +46,22 @@ h1, h2, h3, h4, h5, h6
   font-weight $header-font-weight
   line-height $header-line-height
   letter-spacing $header-letter-spacing
-  margin 0
+  margin $header-base-top-margin 0 $header-base-bottom-margin
 
 h1
   font-size $base-font-size * 3.5
-  margin-bottom $header-base-bottom-margin * 4
 
 h2
   font-size $base-font-size * 3
-  margin-bottom $header-base-bottom-margin * 3
 
 h3
   font-size $base-font-size * 2.5
-  margin-bottom $header-base-bottom-margin * 2
 
 h4
   font-size $base-font-size * 2
-  margin-bottom $header-base-bottom-margin * 1
 
 h5
   font-size $base-font-size * 1.5
-  margin-bottom $header-base-bottom-margin * 1
 
 h6
   font-size $base-font-size * 1
-  margin-bottom $header-base-bottom-margin * 1

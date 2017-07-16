@@ -2,19 +2,26 @@
 
 img
   display block
-  margin 1 * $ept
+  margin 0 $base-side-margin $base-bottom-margin
+
+  &.left
+    float left
+    margin-left 0
+
+  &.right
+    float right
+    margin-right 0
 
   &.centered
     margin-left auto
     margin-right auto
 
-pre
-  overflow auto
-
 blockquote
   margin-left 0
   margin-right 0
-  padding 2 * $ept
+  margin-top $base-top-margin
+  margin-bottom $base-bottom-margin
+  padding $base-side-margin
   border-left 1 * $ept solid $border-dark-color
 
 fieldset
@@ -22,7 +29,7 @@ fieldset
   margin 0
   min-width auto
   border none
-  padding $form-fieldset-padding * 2 $form-fieldset-padding $form-fieldset-padding
+  padding $form-fieldset-padding * 3 $form-fieldset-padding $form-fieldset-padding
   background-color $panel-background-color
 
   legend
@@ -33,13 +40,14 @@ fieldset
 
 label
   display inline-block
-  margin 0 0 1 * $ept
+  margin 0 0 .5 * $base-bottom-margin
 
 input
 textarea
 select
   width 100%
   padding 1 * $ept
+  margin 0
   box-sizing border-box
   border-radius $base-border-radius
   border 1px solid $border-color
@@ -97,16 +105,16 @@ input[type="submit"]
     margin 0
 
     &.top
-      top 2 * $ept
+      top $base-top-margin
 
     &.bottom
-      bottom 2 * $ept
+      bottom $base-bottom-margin
 
     &.left
-      left 2 * $ept
+      left $base-side-margin
 
     &.right
-      right 2 * $ept
+      right $base-side-margin
 
 table
   th

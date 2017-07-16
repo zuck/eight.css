@@ -20,16 +20,11 @@ html
   display flex
 
 .row
+
   .column
+    flex 1
     padding-left $grid-column-gutter * 1
     padding-right $grid-column-gutter * 1
-    flex 1
-
-    &:first-child
-      padding-left $grid-column-gutter * 0 !important
-
-    &:last-child
-      padding-right $grid-column-gutter * 0 !important
 
     &.tenth
       flex-basis 10%
@@ -60,3 +55,56 @@ html
     .column
       padding-left $grid-column-gutter * 2
       padding-right $grid-column-gutter * 2
+
+  &:not(.reverse)
+    .column:first-of-type
+      padding-left 0
+    .column:last-of-type
+      padding-right 0
+
+  &.reverse
+    flex-direction row-reverse
+    .column:first-of-type
+      padding-right 0
+    .column:last-of-type
+      padding-left 0
+
+  &.stackable
+    @media screen and (max-width: $xs)
+      flex-flow column wrap
+
+      &.reverse
+        flex-direction column-reverse
+
+      .column
+        padding 0
+
+    &.sm
+      @media screen and (max-width: $sm)
+        flex-flow column wrap
+
+        &.reverse
+          flex-direction column-reverse
+
+        .column
+          padding 0
+
+    &.md
+      @media screen and (max-width: $md)
+        flex-flow column wrap
+
+        &.reverse
+          flex-direction column-reverse
+
+        .column
+          padding 0
+
+    &.lg
+      @media screen and (max-width: $lg)
+        flex-flow column wrap
+
+        &.reverse
+          flex-direction column-reverse
+
+        .column
+          padding 0

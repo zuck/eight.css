@@ -57,6 +57,7 @@ select
   width 100%
   padding $form-input-padding
   margin 0
+  outline 0
   box-sizing border-box
   border-radius $base-border-radius
   border 1px solid $border-color
@@ -67,15 +68,13 @@ input
 select
   max-width $form-input-max-width
   min-height $form-input-min-height
+  max-height $form-input-min-height
 
 select
 input[type="checkbox"]
 input[type="radio"]
+input[type="file"]
   cursor pointer
-
-textarea
-  max-width $form-textarea-max-width
-  min-height $form-textarea-min-height
 
 input[type="reset"]
 input[type="submit"]
@@ -84,18 +83,26 @@ input[type="radio"]
   width auto
   min-height auto
 
+textarea
+  max-width $form-textarea-max-width
+  min-height $form-textarea-min-height
+
 
 /* Buttons */
 
 button
 input[type="reset"]
 input[type="submit"]
+input[type="button"]
 .btn
   display inline-block
+  width auto
+  min-height auto
   margin 0 0 0 $base-side-margin
   padding $button-padding
   border none
   border-radius $base-border-radius
+  outline 0
   background-color $border-color
   color $text-color
   font-family $header-font-family

@@ -62,6 +62,14 @@
     	<li>List Item 1</li>
     	<li>List Item 2</li>
     	<li>List Item 3</li>
+    	<li>
+        List Item 4
+        <ol>
+        	<li>List Item 4.1</li>
+        	<li>List Item 4.2</li>
+        	<li>List Item 4.3</li>
+        </ol>
+      </li>
     </ol>
 
     <h3>Unordered List</h3>
@@ -69,6 +77,14 @@
     	<li>List Item 1</li>
     	<li>List Item 2</li>
     	<li>List Item 3</li>
+    	<li>
+        List Item 4
+        <ul>
+        	<li>List Item 4.1</li>
+        	<li>List Item 4.2</li>
+        	<li>List Item 4.3</li>
+        </ul>
+      </li>
     </ul>
 
     <hr />
@@ -370,7 +386,8 @@
       z-index: -1;
     }
 
-    img:not(.logo) {
+    img:not(.logo),
+    fieldset {
       border: 1px solid #e6e6e6;
     }
 

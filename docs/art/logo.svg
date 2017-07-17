@@ -12,9 +12,9 @@
    inkscape:version="0.91 r13725"
    version="1.1"
    id="svg2"
-   viewBox="0 0 729.16608 729.16621"
-   height="729.1662"
-   width="729.16608"
+   viewBox="0 0 709.16608 709.16621"
+   height="709.1662"
+   width="709.16608"
    sodipodi:docname="logo.svg">
   <defs
      id="defs4" />
@@ -29,9 +29,9 @@
      showgrid="false"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
-     inkscape:cy="124.08142"
-     inkscape:cx="79.606745"
-     inkscape:zoom="0.60224609"
+     inkscape:cy="178.48358"
+     inkscape:cx="45.658385"
+     inkscape:zoom="0.51814337"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -39,12 +39,12 @@
      pagecolor="#ffffff"
      id="base"
      units="px"
-     fit-margin-bottom="10"
-     fit-margin-right="10"
-     fit-margin-top="10"
-     fit-margin-left="10">
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-top="0"
+     fit-margin-left="0">
     <sodipodi:guide
-       position="364.53579,741.29725"
+       position="354.53579,731.29727"
        orientation="1,0"
        id="guide4279"
        inkscape:label=""
@@ -66,7 +66,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-7.4642054,-161.59799)">
+     transform="translate(-17.464205,-171.59799)">
     <g
        id="g4438"
        transform="translate(0.39532121,-1.9998987)">

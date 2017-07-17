@@ -2,9 +2,9 @@
   "name": "eight.css",
   "version": "0.0.5",
   "description": "A micro (and modular) CSS framework based on 8pt grid",
-  "main": "dist/eight.css",
+  "main": "lib/eight.css",
   "scripts": {
-    "build": "echo \"Building eight.css...\" && stylus src --include-css -m -c -r -o dist && copyfiles -f dist/eight.css docs/",
+    "build": "echo \"Building eight.css...\" && stylus src --include-css -m -c -r -o lib && copyfiles -f lib/eight.css docs/",
     "test": "npm run build && echo \"Warning: no test specified\"",
     "pre-publish": "npm run test"
   },

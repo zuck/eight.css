@@ -35,7 +35,17 @@ blockquote
   cite
     font-size $base-font-size
 
+ol, ul
+  padding-left 2 * $base-side-margin
+
+dd
+  margin-left 2 * $base-side-margin
+
+
+/* Forms */
+
 legend
+  display inline-block
   color $text-color
   font-family $header-font-family
   font-weight $highlight-font-weight
@@ -44,6 +54,8 @@ legend
   text-transform uppercase
 
 label
+  display inline-block
+  margin 0 0 .5 * $base-bottom-margin
   color $text-color
   font-family $header-font-family
   font-weight $header-font-weight

@@ -1,5 +1,8 @@
 @import 'eight.theme'
 
+
+/* Images */
+
 img
   display block
   max-width 100%
@@ -32,8 +35,8 @@ img
   &.xl
     width $img-xl-width
 
-blockquote
-  border-left 1 * $ept solid $border-dark-color
+
+/* Forms */
 
 fieldset
   position relative
@@ -42,15 +45,11 @@ fieldset
   border none
   padding $form-fieldset-padding * 3 $form-fieldset-padding $form-fieldset-padding
 
-  legend
-    position absolute
-    top 0
-    left 0
-    margin $form-fieldset-padding
-
-label
-  display inline-block
-  margin 0 0 .5 * $base-bottom-margin
+legend
+  position absolute
+  top 0
+  left 0
+  margin $form-fieldset-padding
 
 input
 textarea
@@ -84,6 +83,9 @@ input[type="checkbox"]
 input[type="radio"]
   width auto
   min-height auto
+
+
+/* Buttons */
 
 button
 input[type="reset"]
@@ -127,3 +129,9 @@ input[type="submit"]
 
     &.right
       right 0
+
+
+/* Misc */
+
+blockquote
+  border-left 1 * $ept solid $border-dark-color

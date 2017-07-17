@@ -2,6 +2,7 @@
 
 img
   display block
+  max-width 100%
   margin 0 $base-side-margin $base-bottom-margin
 
   &.left
@@ -15,6 +16,21 @@ img
   &.centered
     margin-left auto
     margin-right auto
+
+  &.xs
+    width $img-xs-width
+
+  &.sm
+    width $img-sm-width
+
+  &.md
+    width $img-md-width
+
+  &.lg
+    width $img-lg-width
+
+  &.xl
+    width $img-xl-width
 
 blockquote
   margin-left 0
@@ -46,7 +62,7 @@ input
 textarea
 select
   width 100%
-  padding 1 * $ept
+  padding $form-input-padding
   margin 0
   box-sizing border-box
   border-radius $base-border-radius
@@ -56,8 +72,8 @@ select
 
 input
 select
-  max-width 48 * $ept
-  min-height 4 * $ept
+  max-width $form-input-max-width
+  min-height $form-input-min-height
 
 select
 input[type="checkbox"]
@@ -65,8 +81,8 @@ input[type="radio"]
   cursor pointer
 
 textarea
-  max-width 72 * $ept
-  min-height 24 * $ept
+  max-width $form-textarea-max-width
+  min-height $form-textarea-min-height
 
 input[type="reset"]
 input[type="submit"]
@@ -80,9 +96,8 @@ input[type="reset"]
 input[type="submit"]
 .btn
   display inline-block
-  margin 0
-  margin-right 1 * $ept
-  padding 1.5 * $ept 3 * $ept
+  margin 0 0 0 $base-side-margin
+  padding $button-padding
   border none
   border-radius $base-border-radius
   background-color $border-color
@@ -96,27 +111,30 @@ input[type="submit"]
   box-shadow none
   cursor pointer
 
+  &:first-of-type
+    margin-left 0
+
   &:hover
     background-color $border-dark-color
     color $text-inverted-color
 
   &.floating
     position fixed
-    margin 0
+    margin $base-margin
 
     &.top
-      top $base-top-margin
+      top 0
 
     &.bottom
-      bottom $base-bottom-margin
+      bottom 0
 
     &.left
-      left $base-side-margin
+      left 0
 
     &.right
-      right $base-side-margin
+      right 0
 
 table
   th
   td
-    padding 1 * $ept
+    padding $table-cell-padding

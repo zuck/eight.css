@@ -18,11 +18,11 @@ html
 .row,
 .column
   display flex
+  flex 1
 
 .row
 
   .column
-    flex 1
     padding-left $grid-column-gutter * 1
     padding-right $grid-column-gutter * 1
 
@@ -76,8 +76,9 @@ html
       &.reverse
         flex-direction column-reverse
 
-      .column
+      > .column
         padding 0
+        max-width 100%
 
     &.sm
       @media screen and (max-width: $sm)

@@ -289,6 +289,30 @@
       <div class="column"><div class="box">Third</div></div>
     </div>
 
+    <h3>Nested</h3>
+
+    <div class="row">
+      <div class="column half"><div class="box">1/2</div></div>
+      <div class="column">
+        <div class="row">
+          <div class="column half"><div class="box">1/2</div></div>
+          <div class="column"><div class="box"></div></div>
+          <div class="column"><div class="box"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row stackable">
+      <div class="column half"><div class="box">1/2</div></div>
+      <div class="column">
+        <div class="row">
+          <div class="column half"><div class="box">1/2</div></div>
+          <div class="column"><div class="box"></div></div>
+          <div class="column"><div class="box"></div></div>
+        </div>
+      </div>
+    </div>
+
     <h3>Reverse order</h3>
 
     <div class="row reverse">
@@ -335,8 +359,12 @@
       line-height: 32px;
       vertical-align: middle;
       text-align: center;
-      background-color: #333;
+      background-color: #212121;
       color: #fafafa;
+    }
+
+    .row .row .box {
+      background-color: #424242;
     }
     </style>
   </body>

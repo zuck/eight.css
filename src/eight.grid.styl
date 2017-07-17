@@ -1,5 +1,23 @@
 @import 'eight.theme'
 
+
+/* Mixins */
+
+makeStackable()
+  -webkit-flex-flow column wrap
+  flex-flow column wrap
+
+  &.reverse
+    -webkit-flex-direction column-reverse
+    flex-direction column-reverse
+
+  > .column
+    padding 0
+    max-width 100%
+
+
+/* Rules */
+
 html
   min-width 320px
 
@@ -17,32 +35,46 @@ html
 
 .row,
 .column
+  display -webkit-box       /* OLD - iOS 6-, Safari 3.1-6 */
+  display -moz-box          /* OLD - Firefox 19- (buggy but mostly works) */
+  display -ms-flexbox       /* TWEENER - IE 10 */
+  display -webkit-flex      /* NEW - Chrome */
   display flex
+  -webkit-box-flex 1        /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex 1           /* OLD - Firefox 19- */
+  -webkit-flex 1            /* Chrome */
+  -ms-flex 1                /* IE 10 */
   flex 1
 
 .row
+  max-width 100%
 
   .column
     padding-left $grid-column-gutter * 1
     padding-right $grid-column-gutter * 1
 
     &.tenth
+      -webkit-flex-basis 10%
       flex-basis 10%
       max-width 10%
 
     &.fifth
+      -webkit-flex-basis 20%
       flex-basis 20%
       max-width 20%
 
     &.fourth
+      -webkit-flex-basis 25%
       flex-basis 25%
       max-width 25%
 
     &.third
+      -webkit-flex-basis 33.33%
       flex-basis 33.33%
       max-width 33.33%
 
     &.half
+      -webkit-flex-basis 50%
       flex-basis 50%
       max-width 50%
 
@@ -63,6 +95,7 @@ html
       padding-right 0
 
   &.reverse
+    -webkit-flex-direction row-reverse
     flex-direction row-reverse
     .column:first-of-type
       padding-right 0
@@ -71,41 +104,16 @@ html
 
   &.stackable
     @media screen and (max-width: $xs)
-      flex-flow column wrap
-
-      &.reverse
-        flex-direction column-reverse
-
-      > .column
-        padding 0
-        max-width 100%
+      makeStackable()
 
     &.sm
       @media screen and (max-width: $sm)
-        flex-flow column wrap
-
-        &.reverse
-          flex-direction column-reverse
-
-        .column
-          padding 0
+        makeStackable()
 
     &.md
       @media screen and (max-width: $md)
-        flex-flow column wrap
-
-        &.reverse
-          flex-direction column-reverse
-
-        .column
-          padding 0
+        makeStackable()
 
     &.lg
       @media screen and (max-width: $lg)
-        flex-flow column wrap
-
-        &.reverse
-          flex-direction column-reverse
-
-        .column
-          padding 0
+        makeStackable()

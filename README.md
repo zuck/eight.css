@@ -4,7 +4,7 @@
 
 > A micro (and modular) CSS framework based on 8pt grid
 
-[![npm version](https://badge.fury.io/js/eight.css.svg)](https://badge.fury.io/js/eight.css)
+[![npm version](https://badge.fury.io/js/eight.css.svg)](https://www.npmjs.com/package/eight.css)
 
 ## Demo
 

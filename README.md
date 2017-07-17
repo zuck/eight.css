@@ -60,7 +60,7 @@ npm install
 npm run build
 ```
 
-All (minimized) CSS files and source maps will be compiled in `dist/`.
+All (minimized) CSS files and source maps will be compiled in `lib/`.
 
 ## Reference
 

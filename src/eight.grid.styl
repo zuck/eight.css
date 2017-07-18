@@ -23,7 +23,7 @@ html
 
 .container
   margin 0 auto
-  padding 0 $base-side-margin
+  padding 0 $container-gutter
 
   @media screen and (min-width: $md)
     width $sm
@@ -33,6 +33,14 @@ html
 
   @media screen and (min-width: $xl)
     width $lg
+
+  &.sm
+    @media screen and (min-width: $md)
+      max-width $sm
+
+  &.md
+    @media screen and (min-width: $lg)
+      max-width $md
 
 .row,
 .col

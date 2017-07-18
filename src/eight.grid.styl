@@ -4,12 +4,12 @@
 /* Mixins */
 
 makeStackable()
-  -webkit-flex-flow col wrap
-  flex-flow col wrap
+  -webkit-flex-flow column wrap
+  flex-flow column wrap
 
   &.reverse
-    -webkit-flex-direction col-reverse
-    flex-direction col-reverse
+    -webkit-flex-direction column-reverse
+    flex-direction column-reverse
 
   > .col
     padding 0
@@ -50,6 +50,8 @@ html
   max-width 100%
 
   .col
+    -webkit-flex-direction column
+    flex-direction column
     padding-left $grid-col-gutter * 1
     padding-right $grid-col-gutter * 1
 

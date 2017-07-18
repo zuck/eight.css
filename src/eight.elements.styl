@@ -96,6 +96,7 @@ input[type="submit"],
 input[type="button"],
 .button
   display inline-block
+  box-sizing border-box
   width auto
   min-height auto
   margin 0 0 0 $base-side-margin
@@ -106,8 +107,9 @@ input[type="button"],
   background-color $button-default-color
   color $text-color
   font-family $header-font-family
-  font-weight $header-font-weight
+  font-weight $base-highlight-font-weight
   line-height $header-line-height
+  vertical-align middle
   letter-spacing $header-letter-spacing
   text-transform uppercase
   text-decoration none

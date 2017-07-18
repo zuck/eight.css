@@ -4,14 +4,14 @@
 /* Mixins */
 
 makeStackable()
-  -webkit-flex-flow column wrap
-  flex-flow column wrap
+  -webkit-flex-flow col wrap
+  flex-flow col wrap
 
   &.reverse
-    -webkit-flex-direction column-reverse
-    flex-direction column-reverse
+    -webkit-flex-direction col-reverse
+    flex-direction col-reverse
 
-  > .column
+  > .col
     padding 0
     max-width 100%
 
@@ -34,7 +34,7 @@ html
     width $lg
 
 .row,
-.column
+.col
   display -webkit-box       /* OLD - iOS 6-, Safari 3.1-6 */
   display -moz-box          /* OLD - Firefox 19- (buggy but mostly works) */
   display -ms-flexbox       /* TWEENER - IE 10 */
@@ -49,9 +49,9 @@ html
 .row
   max-width 100%
 
-  .column
-    padding-left $grid-column-gutter * 1
-    padding-right $grid-column-gutter * 1
+  .col
+    padding-left $grid-col-gutter * 1
+    padding-right $grid-col-gutter * 1
 
     &.tenth
       -webkit-flex-basis 10%
@@ -79,27 +79,27 @@ html
       max-width 50%
 
   &.compact
-    .column
-      padding-left $grid-column-gutter * 0
-      padding-right $grid-column-gutter * 0
+    .col
+      padding-left $grid-col-gutter * 0
+      padding-right $grid-col-gutter * 0
 
   &.expanded
-    .column
-      padding-left $grid-column-gutter * 2
-      padding-right $grid-column-gutter * 2
+    .col
+      padding-left $grid-col-gutter * 2
+      padding-right $grid-col-gutter * 2
 
   &:not(.reverse)
-    .column:first-of-type
+    .col:first-of-type
       padding-left 0
-    .column:last-of-type
+    .col:last-of-type
       padding-right 0
 
   &.reverse
     -webkit-flex-direction row-reverse
     flex-direction row-reverse
-    .column:first-of-type
+    .col:first-of-type
       padding-right 0
-    .column:last-of-type
+    .col:last-of-type
       padding-left 0
 
   &.stackable

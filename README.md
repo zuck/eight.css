@@ -15,8 +15,8 @@ You can take a look of all **eight.css** features on demo page: [try it!](https:
 **Eight.css** is a modular CSS framework, so you can use it as a single bundle
 or importing only the modules you need.
 
-All **eight.css**'s CSS files are minimized but source maps are provided for each one
-of them.
+All **eight.css**'s CSS files are minimized but source maps are provided
+for reach one of them.
 
 ### As a single bundle
 
@@ -30,12 +30,18 @@ You can simply link to the main CSS file in your HTML page:
 
 You can import each **eight.css**'s module as a separated CSS file.
 
-**IMPORTANT:** please, note that by default **eight.css** uses **Normalize.css**.
-When you import separated modules, instead, it is **not**. This means you have
-to add it manually *BEFORE* importing **eight.css** modules.
+> **IMPORTANT:** please, note that by default **eight.css** imports
+**Normalize.css** and **Source Sans Pro** font when used as single bundle.
+When you import separated modules, instead, they are **not** included!
+This means you have to include them manually *BEFORE* importing **eight.css**
+modules.
 
 ```html
-<link rel="stylesheet" href="normalize.css"> /* Not included by default */
+<!-- Not included by default -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="normalize.css">
+
+<!-- Now you can import eight.css modules -->
 <link rel="stylesheet" href="eight.grid.css">
 <link rel="stylesheet" href="eight.typography.css">
 <link rel="stylesheet" href="eight.elements.css">

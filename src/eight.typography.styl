@@ -1,4 +1,5 @@
 @import 'eight.theme'
+@import 'eight.mixins'
 
 
 /* Text */
@@ -74,19 +75,29 @@ label
 /* Tables */
 
 table
+  display inline-block
   width 100%
   max-width 100%
+  overflow-x auto
   margin-top $base-top-margin
   margin-bottom $base-bottom-margin
   border-spacing 0
 
-  th
-    padding $table-cell-padding
-    font-weight $header-font-weight
-    text-align left
+  thead, tbody, tfoot
+    display flex
+    flex-direction column
 
-  td
+  tr
+    display flex
+    flex-direction row
+
+  th, td
+    flex-grow 1
     padding $table-cell-padding
+
+  th
+    font-weight $base-highlight-font-weight
+    text-align left
 
   &.compact
     width auto

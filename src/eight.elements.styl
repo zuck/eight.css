@@ -141,6 +141,59 @@ input[type="button"],
       right 0
 
 
+/* Tables */
+
+makeStackable()
+  tr
+    flex-direction column
+
+    td:not(:last-of-type), th:not(:last-of-type)
+      border-bottom none
+
+  &.celled
+    td
+      border-right 1px solid $border-color
+
+
+table
+  &.bordered
+    td
+      border-bottom 1px solid $border-color
+
+    thead td, th
+      border-bottom 1px solid $border-dark-color
+
+  &.celled
+    td
+      border-left 1px solid $border-color
+      border-bottom 1px solid $border-color
+
+    td:last-of-type
+      border-right 1px solid $border-color
+
+    thead td, th
+      border none
+      background-color $border-dark-color
+      color $text-inverted-color
+
+  &.stackable
+    @media screen and (max-width: $xs)
+      makeStackable()
+
+
+    &.sm
+      @media screen and (max-width: $sm)
+        makeStackable()
+
+    &.md
+      @media screen and (max-width: $md)
+        makeStackable()
+
+    &.lg
+      @media screen and (max-width: $lg)
+        makeStackable()
+
+
 /* Misc */
 
 blockquote

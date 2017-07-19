@@ -140,6 +140,19 @@ input[type="button"],
     &.right
       right 0
 
+makeBtnGroupStackable()
+  flex-direction column
+
+  button,
+  input[type="reset"],
+  input[type="submit"],
+  input[type="button"],
+  .btn
+    margin-left 0
+
+  :not(:last-child)
+    margin-bottom 0
+
 .btn-group
   display inline-flex
   flex-direction row
@@ -154,10 +167,27 @@ input[type="button"],
     border-top-right-radius 0
     border-bottom-right-radius 0
 
+  &.stackable
+    @media screen and (max-width: $xs)
+      makeBtnGroupStackable()
+
+
+    &.sm
+      @media screen and (max-width: $sm)
+        makeBtnGroupStackable()
+
+    &.md
+      @media screen and (max-width: $md)
+        makeBtnGroupStackable()
+
+    &.lg
+      @media screen and (max-width: $lg)
+        makeBtnGroupStackable()
+
 
 /* Tables */
 
-makeStackable()
+makeTableStackable()
   tr
     flex-direction column
 
@@ -192,20 +222,20 @@ table
 
   &.stackable
     @media screen and (max-width: $xs)
-      makeStackable()
+      makeTableStackable()
 
 
     &.sm
       @media screen and (max-width: $sm)
-        makeStackable()
+        makeTableStackable()
 
     &.md
       @media screen and (max-width: $md)
-        makeStackable()
+        makeTableStackable()
 
     &.lg
       @media screen and (max-width: $lg)
-        makeStackable()
+        makeTableStackable()
 
 
 /* Misc */

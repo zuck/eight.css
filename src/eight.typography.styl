@@ -29,6 +29,10 @@ hr
   color $border-color
   background-color $border-color
 
+cite:before
+  content "\2014 \2009"
+  font-style italic
+
 blockquote
   margin-left 0
   margin-right 0
@@ -38,11 +42,7 @@ blockquote
   font-size $base-font-size * 1.5
 
   cite
-    font-size $base-font-size
-
-    &:before
-      content "\2014 \2009"
-      font-style italic
+    font-size 0.6667em
 
 ol, ul
   padding-left 2 * $base-side-margin

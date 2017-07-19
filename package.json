@@ -1,6 +1,6 @@
 {
   "name": "eight.css",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A micro (and modular) CSS framework based on 8pt grid",
   "main": "lib/eight.css",
   "scripts": {

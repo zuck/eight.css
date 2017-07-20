@@ -53,7 +53,8 @@ legend
 
 input,
 textarea,
-select
+select,
+button
   width 100%
   padding $form-input-padding
   margin 0
@@ -73,13 +74,21 @@ select
 select,
 input[type="checkbox"],
 input[type="radio"],
-input[type="file"]
+input[type="file"],
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+button
   cursor pointer
 
 input[type="reset"],
 input[type="submit"],
+input[type="button"],
 input[type="checkbox"],
-input[type="radio"]
+input[type="radio"],
+button
   width auto
   min-height auto
 
@@ -90,16 +99,13 @@ textarea
 
 /* Buttons */
 
-button,
-input[type="reset"],
-input[type="submit"],
-input[type="button"],
 .btn
   display inline-block
   box-sizing border-box
   width auto
+  min-width 5 * $ept
   min-height auto
-  margin 0 0 0 $base-side-margin
+  margin 0
   padding $button-padding
   border none
   border-radius $base-border-radius
@@ -117,8 +123,8 @@ input[type="button"],
   box-shadow none
   cursor pointer
 
-  &:first-of-type
-    margin-left 0
+  &+.btn
+    margin-left $base-side-margin
 
   &:hover
     background-color $border-dark-color
@@ -143,13 +149,6 @@ input[type="button"],
 makeBtnGroupStackable()
   flex-direction column
 
-  button,
-  input[type="reset"],
-  input[type="submit"],
-  input[type="button"],
-  .btn
-    margin-left 0
-
   :not(:last-child)
     margin-bottom 0
 
@@ -158,8 +157,10 @@ makeBtnGroupStackable()
   flex-direction row
   justify-content center
 
+  .btn
+    margin-left 0 !important
+
   :not(:first-child)
-    margin-left 0
     border-top-left-radius 0
     border-bottom-left-radius 0
 

@@ -24,6 +24,8 @@ body
   overflow-x hidden
 
 .container
+  box-sizing border-box
+  max-width 100%
   margin 0 auto
   padding 0 $container-gutter
 
@@ -48,10 +50,9 @@ body
 .col
   display flex
   flex 1
-
-.row
   max-width 100%
 
+.row
   .col
     position relative
     flex-direction column

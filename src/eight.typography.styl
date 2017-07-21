@@ -64,12 +64,19 @@ legend
 
 label
   display inline-block
-  margin 0 0 .5 * $base-bottom-margin
+  margin 0 $base-side-margin .5 * $base-bottom-margin 0
   color $text-color
   font-family $header-font-family
   font-weight $form-label-font-weight
   line-height $header-line-height
   letter-spacing $header-letter-spacing
+
+input[type="checkbox"],
+input[type="radio"]
+  height 1rem * $base-line-height
+  min-height 1rem * $base-line-height
+  margin-right .25 * $base-side-margin
+  vertical-align middle
 
 
 /* Tables */

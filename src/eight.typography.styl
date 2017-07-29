@@ -83,20 +83,17 @@ input[type="radio"]
 /* Tables */
 
 table
-  display inline-block
+  display inline-table
+  box-sizing border-box
   width 100%
+  min-width 100%
   max-width 100%
-  overflow-x auto
   margin-top $base-top-margin
   margin-bottom $base-bottom-margin
   border-spacing 0
 
-  thead, tbody, tfoot
-    display table
-    min-width 100%
-
   th, td
-    flex-grow 1
+    box-sizing border-box
     padding $table-cell-padding
 
   th
@@ -104,7 +101,11 @@ table
     text-align left
 
   &.compact
+    min-width auto
     width auto
+
+    td, th
+      min-width auto
 
 
 /* Headers */

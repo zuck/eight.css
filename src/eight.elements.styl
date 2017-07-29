@@ -221,9 +221,8 @@ table
       color $text-inverted-color
 
   &.stackable
-    @media screen and (max-width: $xs)
-      makeTableStackable()
-
+    td, th
+      min-width 100%
 
     &.sm
       @media screen and (max-width: $sm)
@@ -236,6 +235,9 @@ table
     &.lg
       @media screen and (max-width: $lg)
         makeTableStackable()
+
+    @media screen and (max-width: $xs)
+      makeTableStackable()
 
 
 /* Misc */

@@ -1,0 +1,60 @@
+@require 'eight.theme'
+
+
+/* Forms */
+
+fieldset
+  position relative
+  margin 0
+  min-width auto
+  border none
+  padding $form-fieldset-padding * 3 $form-fieldset-padding $form-fieldset-padding
+
+legend
+  position absolute
+  top 0
+  left 0
+  margin $form-fieldset-padding
+
+input,
+textarea,
+select,
+button
+  width 100%
+  padding $form-input-padding
+  margin 0
+  outline 0
+  box-sizing border-box
+  border-radius $base-border-radius
+  border 1px solid $border-color
+  background-color $white-color
+  box-shadow none
+
+input
+select
+  max-width $form-input-max-width
+  min-height $form-input-min-height
+  max-height $form-input-min-height
+
+select,
+input[type="file"],
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+button
+  cursor pointer
+
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+button
+  width auto
+  min-height auto
+
+textarea
+  max-width $form-textarea-max-width
+  min-height $form-textarea-min-height

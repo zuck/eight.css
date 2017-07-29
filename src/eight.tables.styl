@@ -1,0 +1,57 @@
+@require 'eight.theme'
+
+
+/* Tables */
+
+makeTableStackable()
+  tr
+    display flex
+    flex-direction column
+
+    td:not(:last-of-type), th:not(:last-of-type)
+      border-bottom none
+
+  &.celled
+    td
+      border-right 1px solid $border-color
+
+
+table
+  &.bordered
+    td
+      border-bottom 1px solid $border-color
+
+    thead td, th
+      border-bottom 1px solid $border-dark-color
+
+  &.celled
+    td
+      border-left 1px solid $border-color
+      border-bottom 1px solid $border-color
+
+    td:last-of-type
+      border-right 1px solid $border-color
+
+    thead td, th
+      border none
+      background-color $border-dark-color
+      color $text-inverted-color
+
+  &.stackable
+    td, th
+      min-width 100%
+
+    &.sm
+      @media screen and (max-width: $sm)
+        makeTableStackable()
+
+    &.md
+      @media screen and (max-width: $md)
+        makeTableStackable()
+
+    &.lg
+      @media screen and (max-width: $lg)
+        makeTableStackable()
+
+    @media screen and (max-width: $xs)
+      makeTableStackable()

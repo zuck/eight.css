@@ -1,0 +1,90 @@
+@require 'eight.theme'
+
+
+/* Buttons */
+
+.btn
+  display inline-block
+  box-sizing border-box
+  width auto
+  min-width 5 * $ept
+  min-height auto
+  margin 0
+  padding $button-padding
+  border none
+  border-radius $base-border-radius
+  outline 0
+  background-color $button-default-color
+  color $text-color
+  font-family $header-font-family
+  font-weight $base-highlight-font-weight
+  letter-spacing $header-letter-spacing
+  line-height $header-line-height
+  vertical-align middle
+  text-align center
+  text-transform uppercase
+  text-decoration none
+  box-shadow none
+  cursor pointer
+
+  &+.btn
+    margin-left $base-side-margin
+
+  &:hover
+    background-color $border-dark-color
+    color $text-inverted-color
+
+  &.floating
+    position fixed
+    margin $base-margin
+
+    &.top
+      top 0
+
+    &.bottom
+      bottom 0
+
+    &.left
+      left 0
+
+    &.right
+      right 0
+
+makeBtnGroupStackable()
+  flex-direction column
+
+  :not(:last-child)
+    margin-bottom 0
+
+.btn-group
+  display inline-flex
+  flex-direction row
+  justify-content center
+
+  .btn
+    margin-left 0 !important
+
+  :not(:first-child)
+    border-top-left-radius 0
+    border-bottom-left-radius 0
+
+  :not(:last-child)
+    border-top-right-radius 0
+    border-bottom-right-radius 0
+
+  &.stackable
+    @media screen and (max-width: $xs)
+      makeBtnGroupStackable()
+
+
+    &.sm
+      @media screen and (max-width: $sm)
+        makeBtnGroupStackable()
+
+    &.md
+      @media screen and (max-width: $md)
+        makeBtnGroupStackable()
+
+    &.lg
+      @media screen and (max-width: $lg)
+        makeBtnGroupStackable()

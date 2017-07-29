@@ -38,13 +38,16 @@ modules.
 
 ```html
 <!-- Not included by default -->
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro">
 <link rel="stylesheet" href="normalize.css">
 
 <!-- Now you can import eight.css modules -->
 <link rel="stylesheet" href="eight.grid.css">
 <link rel="stylesheet" href="eight.typography.css">
-<link rel="stylesheet" href="eight.elements.css">
+<link rel="stylesheet" href="eight.images.css">
+<link rel="stylesheet" href="eight.tables.css">
+<link rel="stylesheet" href="eight.forms.css">
+<link rel="stylesheet" href="eight.buttons.css">
 ```
 
 ### As a package

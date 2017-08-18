@@ -35,6 +35,7 @@ select
   max-width $form-input-max-width
   min-height $form-input-min-height
   max-height $form-input-min-height
+  line-height $form-input-min-height - $form-input-padding * 2
 
 select,
 input[type="file"],
@@ -45,6 +46,10 @@ input[type="checkbox"],
 input[type="radio"],
 button
   cursor pointer
+
+input[type="file"]
+  padding-top $form-input-padding * .5
+  padding-bottom $form-input-padding * .5
 
 input[type="reset"],
 input[type="submit"],

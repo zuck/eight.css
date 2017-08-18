@@ -56,13 +56,13 @@ button
 input[type="checkbox"],
 input[type="radio"]
   position relative
-  visibility hidden
   width 1rem
   height 1rem
   min-width 1rem
   min-height 1rem
   margin-top -.2rem
 
+/* Doesn't work on FF...
   &:before
     position absolute
     display inline-block
@@ -87,6 +87,7 @@ input[type="radio"]
 
   &:before
     border-radius 50%
+*/
 
 input[type="checkbox"]+label,
 input[type="radio"]+label

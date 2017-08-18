@@ -130,19 +130,28 @@ h1, h2, h3, h4, h5, h6
   margin $header-base-top-margin 0 $header-base-bottom-margin
 
 h1
-  font-size $base-font-size * 3.5
+  font-size $base-font-size * 2.25
+
+  @media screen and (min-width $sm)
+    font-size $base-font-size * 3
 
 h2
-  font-size $base-font-size * 3
-
-h3
-  font-size $base-font-size * 2.5
-
-h4
   font-size $base-font-size * 2
 
-h5
+  @media screen and (min-width $sm)
+    font-size $base-font-size * 2.5
+
+h3
+  font-size $base-font-size * 1.75
+
+  @media screen and (min-width $sm)
+    font-size $base-font-size * 2
+
+h4
   font-size $base-font-size * 1.5
+
+h5
+  font-size $base-font-size * 1.25
 
 h6
   font-size $base-font-size * 1

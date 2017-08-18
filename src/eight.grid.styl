@@ -59,9 +59,21 @@ body
     padding-left $grid-col-gutter * 1
     padding-right $grid-col-gutter * 1
 
+    &.twelfth
+      flex-basis 8.333333333%
+      max-width 8.333333333%
+
     &.tenth
       flex-basis 10%
       max-width 10%
+
+    &.eighth
+      flex-basis 12.5%
+      max-width 12.5%
+
+    &.sixth
+      flex-basis 16.666666667%
+      max-width 16.666666667%
 
     &.fifth
       flex-basis 20%
@@ -78,6 +90,10 @@ body
     &.half
       flex-basis 50%
       max-width 50%
+
+    &.golden
+      flex-basis 61.803398875%
+      max-width 61.803398875%
 
   &.compact
     .col

@@ -7,7 +7,7 @@ makeTableStackable()
   tr
     display flex
     flex-direction column
-    
+
     td, th
       min-width 100%
 
@@ -39,6 +39,9 @@ table
       border none
       background-color $border-dark-color
       color $text-inverted-color
+
+  &.striped tbody > tr:nth-child(odd)
+    background-color rgba(0,0,0,.05)
 
   &.stackable
     &.sm

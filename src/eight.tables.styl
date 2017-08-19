@@ -7,6 +7,9 @@ makeTableStackable()
   tr
     display flex
     flex-direction column
+    
+    td, th
+      min-width 100%
 
     td:not(:last-of-type), th:not(:last-of-type)
       border-bottom none
@@ -38,9 +41,6 @@ table
       color $text-inverted-color
 
   &.stackable
-    td, th
-      min-width 100%
-
     &.sm
       @media screen and (max-width: $sm)
         makeTableStackable()

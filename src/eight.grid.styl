@@ -48,7 +48,7 @@ body
 .row,
 .col
   display flex
-  flex 1 1
+  flex 1
   box-sizing border-box
 
 .row
@@ -59,8 +59,8 @@ body
   .col
     position relative
     flex-direction column
-    margin-left $grid-col-gutter * 1
-    margin-right $grid-col-gutter * 1
+    padding-left $grid-col-gutter * 1
+    padding-right $grid-col-gutter * 1
     max-width 100%
 
     &.twelfth
@@ -104,24 +104,24 @@ body
     margin-right - $grid-col-gutter * 0
 
     .col
-      margin-left $grid-col-gutter * 0
-      margin-right $grid-col-gutter * 0
+      padding-left $grid-col-gutter * 0
+      padding-right $grid-col-gutter * 0
 
   &.tiny
     margin-left - $grid-col-gutter * .5
     margin-right - $grid-col-gutter * .5
 
     .col
-      margin-left $grid-col-gutter * .5
-      margin-right $grid-col-gutter * .5
+      padding-left $grid-col-gutter * .5
+      padding-right $grid-col-gutter * .5
 
   &.expanded
     margin-left - $grid-col-gutter * 2
     margin-right - $grid-col-gutter * 2
 
     .col
-      margin-left $grid-col-gutter * 2
-      margin-right $grid-col-gutter * 2
+      padding-left $grid-col-gutter * 2
+      padding-right $grid-col-gutter * 2
 
   &.reverse
     flex-direction row-reverse

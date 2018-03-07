@@ -11,7 +11,6 @@ makeStackable()
     flex-direction column-reverse
 
   > .col
-    padding 0
     max-width 100%
 
 
@@ -49,15 +48,20 @@ body
 .row,
 .col
   display flex
-  flex 1
-  max-width 100%
+  flex 1 1
+  box-sizing border-box
 
 .row
+  flex-wrap wrap
+  margin-left - $grid-col-gutter * 1
+  margin-right - $grid-col-gutter * 1
+
   .col
     position relative
     flex-direction column
-    padding-left $grid-col-gutter * 1
-    padding-right $grid-col-gutter * 1
+    margin-left $grid-col-gutter * 1
+    margin-right $grid-col-gutter * 1
+    max-width 100%
 
     &.twelfth
       flex-basis 8.333333333%
@@ -96,27 +100,31 @@ body
       max-width 61.803398875%
 
   &.compact
+    margin-left - $grid-col-gutter * 0
+    margin-right - $grid-col-gutter * 0
+
     .col
-      padding-left $grid-col-gutter * 0
-      padding-right $grid-col-gutter * 0
+      margin-left $grid-col-gutter * 0
+      margin-right $grid-col-gutter * 0
+
+  &.tiny
+    margin-left - $grid-col-gutter * .5
+    margin-right - $grid-col-gutter * .5
+
+    .col
+      margin-left $grid-col-gutter * .5
+      margin-right $grid-col-gutter * .5
 
   &.expanded
-    .col
-      padding-left $grid-col-gutter * 2
-      padding-right $grid-col-gutter * 2
+    margin-left - $grid-col-gutter * 2
+    margin-right - $grid-col-gutter * 2
 
-  &:not(.reverse)
-    .col:first-of-type
-      padding-left 0
-    .col:last-of-type
-      padding-right 0
+    .col
+      margin-left $grid-col-gutter * 2
+      margin-right $grid-col-gutter * 2
 
   &.reverse
     flex-direction row-reverse
-    .col:first-of-type
-      padding-right 0
-    .col:last-of-type
-      padding-left 0
 
   &.stackable
     @media screen and (max-width: $xs)

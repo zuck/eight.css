@@ -8,7 +8,9 @@
     "test": "npm run build && echo \"Warning: no test specified\"",
     "pre-publish": "npm run test"
   },
-  "pre-commit": [ "pre-publish" ],
+  "pre-commit": [
+    "pre-publish"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zuck/eight.css.git"

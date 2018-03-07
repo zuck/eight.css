@@ -797,22 +797,37 @@ A piece of computer code:
 
     <h3>Gutters</h3>
 
+    <div class="row compact">
+      <div class="col"><div class="box">Compact</div></div>
+      <div class="col"><div class="box">Compact</div></div>
+      <div class="col"><div class="box">Compact</div></div>
+    </div>
+
+    <div class="row tiny">
+      <div class="col"><div class="box">Tiny</div></div>
+      <div class="col"><div class="box">Tiny</div></div>
+      <div class="col"><div class="box">Tiny</div></div>
+    </div>
+
     <div class="row">
       <div class="col"><div class="box">Normal</div></div>
       <div class="col"><div class="box">Normal</div></div>
       <div class="col"><div class="box">Normal</div></div>
     </div>
 
-    <div class="row compact">
-      <div class="col"><div class="box">Without</div></div>
-      <div class="col"><div class="box">Without</div></div>
-      <div class="col"><div class="box">Without</div></div>
-    </div>
-
     <div class="row expanded">
       <div class="col"><div class="box">Double</div></div>
       <div class="col"><div class="box">Double</div></div>
       <div class="col"><div class="box">Double</div></div>
+    </div>
+
+    <h3>Wrap</h3>
+
+    <div class="row">
+      <div class="col half"><div class="box">1/2</div></div>
+      <div class="col third"><div class="box">1/3</div></div>
+      <div class="col"><div class="empty box"></div></div>
+      <div class="col third"><div class="box">1/3 (wrapped)</div></div>
     </div>
 
     <h3>Stackable</h3>
@@ -971,8 +986,16 @@ A piece of computer code:
       line-height: 32px;
       vertical-align: middle;
       text-align: center;
+    }
+
+    .box:not(.empty) {
       background-color: #212121;
       color: #FFF;
+    }
+
+    .box.empty {
+      background-color: transparent !important;
+      border: 1px dashed #212121;
     }
 
     .row .col.golden+.col .box,
